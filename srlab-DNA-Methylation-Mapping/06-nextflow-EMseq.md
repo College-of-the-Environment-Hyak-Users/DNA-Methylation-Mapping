@@ -1,7 +1,7 @@
 # Using Nextflow for EM-Seq
 
-Author: Shelly Wannamaker  
-See: [https://shellywannamaker.github.io/400th-post/](https://shellywannamaker.github.io/400th-post/)
+Author: Shelly Wanamaker  
+See: [https://shellywanamaker.github.io/400th-post/](https://shellywanamaker.github.io/400th-post/)
 
 ---
 
