@@ -1,6 +1,7 @@
 # Using Nextflow for EM-Seq
 
 author: Shelly Wannamaker
+
 see https://shellywanamaker.github.io/400th-post/
 
 
@@ -39,6 +40,15 @@ rsync --progress --verbose --archive shellytrigg@gannet.fish.washington.edu:/vol
 ## Run Methlyseq pipeline
 
 ```
+
+#activate conda environment
+mamba activate nextflow
+
+# OR the following
+# mamba activate /gscratch/srlab/nextflow/bin/miniforge/envs/nextflow
+
+
+
 nextflow run nf-core/methylseq \
 -c /gscratch/srlab/strigg/bin/uw_hyak_srlab.config \
 --input /gscratch/scrubbed/strigg/analyses/20250422_methylseq/samplesheet.csv \
