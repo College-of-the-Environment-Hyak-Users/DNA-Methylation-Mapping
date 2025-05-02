@@ -1,6 +1,7 @@
-# DNA-Methylation-Mapping
 
-Workflows for analyzing DNA methylation sequencing data (BS-seq; EM-seq)
+# Roberts Lab Workflows
+
+These files are organized in pairs where a slurm job and corresponding shell script is provided with similar prefix IDs, listed and described here:
 
 -   **02.01-bismark**: Script automatically identifies paired-end FASTQ files by matching *R1* and *R2* patterns, skips previously processed samples by parsing Bismark report logs, and assigns a unique file pair to each SLURM array task using SLURM_ARRAY_TASK_ID. The script includes error checks for missing or empty file references, and executes Bismark with parameters optimized for non-directional libraries, custom Bowtie2 scoring, and parallel processing. Its checkpoint-aware design avoids redundant computation and streamlines large-scale DNA methylation alignment workflows.
 
